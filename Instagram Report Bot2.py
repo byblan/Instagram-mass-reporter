@@ -9,8 +9,8 @@ import sys
 def getOptions(args=sys.argv[1:]):
 
     parser = argparse.ArgumentParser(description="This bot helps users to mass report accounts with clickbaits or objectionable material.")
-    parser.add_argument("-u", "--username", type = str, default = "", help = "Username to report.")
-    parser.add_argument("-f", "--file", type = str, default = "acc.txt", help = "Accounts list ( Defaults to acc.txt in program directory ).")
+    parser.add_argument("-u", "--username", type = str, default = "", help = "maria_kariin")
+    parser.add_argument("-f", "--file", type = str, default = "acc.txt", help = "maria_kariin")
 
     options = parser.parse_args(args)
 
@@ -23,14 +23,14 @@ username = args.username
 acc_file = args.file
 
 if username == "" :
-	username = input("Username: ")
+	username = input("Username: maria_kariin ")
 
 a = open(acc_file, "r").readlines()
 file = [s.rstrip()for s in a]
 file.reverse()
 
-user = []
-passw = []
+user = [macibojko]
+passw = [milanines1]
 for lines in file:
     file = lines.split(":")
 
